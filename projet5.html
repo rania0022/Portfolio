@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Gestion Pénitentiaire - Rania Madmar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --primary-light: #a29bfe;
+            --dark: #1a1a2e;
+            --glass: rgba(255, 255, 255, 0.85);
+            --bg: #f0f2f8;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f2f8 0%, #e0e7ff 100%);
+            color: #2d3436;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        /* NAVIGATION */
+        .nav-header {
+            padding: 30px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .btn-retour {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            background: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.1);
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-retour:hover {
+            transform: translateX(-5px);
+            background: var(--primary);
+            color: white;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto 80px;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 60px;
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-project {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: var(--dark);
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .periode {
+            display: inline-block;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--primary);
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .image-principale {
+            width: 100%;
+            border-radius: 25px;
+            margin-bottom: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--dark);
+            font-size: 1.6rem;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2::before {
+            content: "";
+            width: 35px;
+            height: 5px;
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* TECH CARDS */
+        .grid-tech {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .tech-card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            transition: 0.3s;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-light);
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.1);
+        }
+
+        .tech-card img {
+            height: 40px;
+            margin-bottom: 12px;
+            object-fit: contain;
+        }
+
+        .tech-card span {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        /* LISTS */
+        .custom-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .custom-list li {
+            padding-left: 35px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .custom-list li i {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: var(--primary);
+        }
+
+        /* BILAN BOX */
+        .bilan-box {
+            background: var(--dark);
+            color: white;
+            padding: 40px;
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+
+        .bilan-box h3 {
+            color: var(--primary-light);
+            margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-header">
+        <a href="index.html#projets" class="btn-retour">
+            <i class="fas fa-arrow-left"></i> Retour au Portfolio
+        </a>
+    </div>
+
+    <div class="container">
+        <header class="header-project">
+            <span class="periode">Octobre 2025</span>
+            <h1>Application de Gestion Pénitentiaire</h1>
+            <p style="color: #636e72; font-weight: 500;">Projet Individuel - Architecture Java & Persistence</p>
+        </header>
+
+        <img src="prison.jpg" alt="Aperçu Application Pénitentiaire" class="image-principale">
+
+        <h2><i class="fas fa-info-circle"></i> Contexte du Projet</h2>
+        <p>Ce projet consiste en le développement d'une application Desktop robuste permettant d'administrer l'ensemble
+            des ressources d'un établissement pénitentiaire (détenus, personnel, cellules et bâtiments). L'enjeu majeur
+            était de centraliser des données sensibles au sein d'une base relationnelle tout en assurant une interface
+            de gestion ergonomique.</p>
+
+        <h2><i class="fas fa-bullseye"></i> Objectifs & Besoins</h2>
+        <ul class="custom-list">
+            <li><i class="fas fa-check-circle"></i> Gestion multi-modules : Administration des détenus, personnels,
+                cellules et bâtiments.</li>
+            <li><i class="fas fa-check-circle"></i> Suivi des affectations et gestion de l'occupation des cellules en
+                temps réel.</li>
+            <li><i class="fas fa-check-circle"></i> Persistance des données via <strong>JDBC</strong> dans une base de
+                données SQL.</li>
+            <li><i class="fas fa-check-circle"></i> Interopérabilité grâce à l'import/export de données aux formats
+                <strong>CSV et JSON</strong>.
+            </li>
+        </ul>
+
+        <h2><i class="fas fa-laptop-code"></i> Technologies & Concepts</h2>
+        <div class="grid-tech">
+            <div class="tech-card">
+                <img src="java.png" alt="Java">
+                <span>Java SE (POO)</span>
+            </div>
+            <div class="tech-card">
+                <img src="swing.png" alt="Swing">
+                <span>Swing / JFrame</span>
+            </div>
+            <div class="tech-card">
+                <img src="mysql.png" alt="SQL">
+                <span>JDBC / SQL</span>
+            </div>
+            <div class="tech-card">
+                <img src="junit.png" alt="JUnit">
+                <span>Tests JUnit</span>
+            </div>
+            <div class="tech-card">
+                <img src="json.png" alt="JSON">
+                <span>CSV / JSON</span>
+            </div>
+        </div>
+
+        <h2><i class="fas fa-tasks"></i> Travail Réalisé</h2>
+        <ul class="custom-list">
+            <li><i class="fas fa-sitemap"></i> <strong>Architecture MVC :</strong> Séparation stricte entre les modèles
+                de données, la logique de contrôle et les interfaces Swing.</li>
+            <li><i class="fas fa-database"></i> <strong>Modélisation Relationnelle :</strong> Conception des tables et
+                gestion de l'intégrité référentielle pour les affectations.</li>
+            <li><i class="fas fa-exchange-alt"></i> <strong>Parsing de fichiers :</strong> Développement de modules
+                d'échange pour automatiser l'intégration de listes externes.</li>
+            <li><i class="fas fa-vial"></i> <strong>Qualité Logicielle :</strong> Mise en place de tests unitaires
+                systématiques avec <strong>JUnit</strong> pour valider les règles métier.</li>
+        </ul>
+
+        <div class="bilan-box">
+            <h3><i class="fas fa-award"></i> Bilan et Compétences</h3>
+            <ul class="custom-list">
+                <li><i class="fas fa-star" style="color: var(--primary-light);"></i> Maîtrise avancée de la POO et de
+                    l'héritage en Java.</li>
+                <li><i class="fas fa-star" style="color: var(--primary-light);"></i> Capacité à gérer la persistance des
+                    données via JDBC/SQL.</li>
+                <li><i class="fas fa-star" style="color: var(--primary-light);"></i> Expérience confirmée dans la
+                    rédaction de rapports de validation technique.</li>
+                <li><i class="fas fa-star" style="color: var(--primary-light);"></i> Rigueur dans l'application des
+                    design patterns (MVC).</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

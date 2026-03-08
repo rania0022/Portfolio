@@ -1,0 +1,1499 @@
+<html>
+
+<style>
+  /* Style des liens dans les projets */
+  .projet a {
+    text-decoration: none;
+    /* supprime le soulignement */
+    color: inherit;
+    /* garde la couleur du texte h3 */
+  }
+
+  /* Optionnel : ajouter un petit effet au survol */
+  .projet a:hover h3 {
+    color: #c4a589;
+    /* change la couleur du titre au survol */
+  }
+
+  .projet img {
+    max-width: 250px;
+    /* ou la taille que tu veux */
+    height: auto;
+    /* pour garder les proportions */
+    display: block;
+    margin: auto;
+    /* pour centrer l'image */
+    border-radius: 8px;
+    /* optionnel, pour arrondir les coins */
+  }
+</style>
+
+<head>
+  <meta charset="UTF-8"> <!-- Encodage des caractères -->
+  <title>Portfolio - Rania Madmar</title>
+  <link rel="stylesheet" href="style.css"> <!-- Fichier CSS principal -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Icônes FontAwesome -->
+</head>
+
+<body>
+
+  <!-- PARTIE : EN-TÊTE + MENU -->
+  <header style="
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background: rgba(26, 26, 46, 0.8); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Poppins', sans-serif;
+">
+    <nav style="
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 15px 20px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    ">
+      <ul style="
+            list-style: none; 
+            display: flex; 
+            gap: clamp(15px, 4vw, 40px); 
+            margin: 0; 
+            padding: 0;
+        ">
+        <li>
+          <a href="#accueil" style="
+                    text-decoration: none; 
+                    color: #ffffff; 
+                    font-size: 0.9rem; 
+                    font-weight: 500; 
+                    letter-spacing: 0.5px; 
+                    transition: 0.3s;
+                    padding: 8px 12px;
+                ">Accueil</a>
+        </li>
+        <li>
+          <a href="#a-propos" style="
+                    text-decoration: none; 
+                    color: #b2bec3; 
+                    font-size: 0.9rem; 
+                    font-weight: 500; 
+                    transition: 0.3s;
+                    padding: 8px 12px;
+                ">À propos</a>
+        </li>
+        <li>
+          <a href="#competences" style="
+                    text-decoration: none; 
+                    color: #b2bec3; 
+                    font-size: 0.9rem; 
+                    font-weight: 500; 
+                    transition: 0.3s;
+                    padding: 8px 12px;
+                ">Compétences</a>
+        </li>
+        <li>
+          <a href="#projets" style="
+                    text-decoration: none; 
+                  color: #b2bec3;  
+                    padding: 8px 20px; 
+                    border-radius: 50px; 
+                    font-size: 0.9rem; 
+                    font-weight: 600; 
+                    transition: 0.3s;
+                ">Mes Projets</a>
+        </li>
+        <li>
+          <a href="#veille" style="
+                    text-decoration: none; 
+                    color: #b2bec3; 
+                    font-size: 0.9rem; 
+                    font-weight: 500; 
+                    transition: 0.3s;
+                    padding: 8px 12px;
+                ">Veille</a>
+        </li>
+        <li>
+          <a href="#certifications" style="
+                    text-decoration: none; 
+                    color: #b2bec3; 
+                    font-size: 0.9rem; 
+                    font-weight: 500; 
+                    transition: 0.3s;
+                    padding: 8px 12px;
+                ">Certifications</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil" style="
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(135deg, #2d1b4e 0%, #1a1a2e 100%); 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 0 20px;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    position: relative;
+    overflow: hidden;
+">
+
+    <div style="
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(155, 89, 182, 0.2) 0%, rgba(0,0,0,0) 70%);
+        z-index: 1;
+        pointer-events: none;
+    "></div>
+
+    <div style="
+        position: relative;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 60px 40px;
+        border-radius: 40px;
+        max-width: 700px;
+        width: 90%;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    ">
+
+      <div style="
+            display: inline-block;
+            background: rgba(162, 155, 254, 0.15);
+            border: 1px solid rgba(162, 155, 254, 0.4);
+            color: #a29bfe;
+            padding: 7px 20px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        ">
+        BTS SIO • Option SLAM
+      </div>
+
+      <h1 style="
+            font-size: clamp(2.8rem, 8vw, 4.2rem); 
+            margin: 0; 
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        ">
+        Rania <span
+          style="background: linear-gradient(to right, #a29bfe, #6c5ce7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Madmar</span>
+      </h1>
+
+      <p style="
+            font-size: clamp(1rem, 3vw, 1.2rem); 
+            color: #b2bec3; 
+            margin: 20px 0 45px 0; 
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+            font-weight: 300;
+        ">
+        Conception d'applications logicielles & Développement de solutions métiers
+      </p>
+
+      <a href="#projets" style="
+            text-decoration: none;
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: #ffffff;
+            padding: 16px 45px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.3);
+            display: inline-block;
+            transition: 0.3s;
+        ">
+        Consulter mes travaux
+      </a>
+
+    </div>
+
+    <a href="#a-propos" style="
+        position: absolute;
+        bottom: 40px;
+        color: #636e72;
+        text-decoration: none;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    ">
+      <span>En savoir plus sur mon profil</span>
+      <div
+        style="width: 2px; height: 30px; background: linear-gradient(to bottom, #6c5ce7, transparent); border-radius: 2px;">
+      </div>
+    </a>
+
+  </section>
+
+  <!-- PARTIE : À PROPOS DE MOI -->
+  <section id="a-propos" style="
+    padding: 100px 20px; 
+    background: #f8f9fc; /* Fond clair pur */
+    color: #2d3436; 
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+">
+    <div
+      style="position: absolute; top: -10%; left: -5%; width: 400px; height: 400px; background: rgba(162, 155, 254, 0.15); filter: blur(100px); border-radius: 50%;">
+    </div>
+    <div
+      style="position: absolute; bottom: 10%; right: -5%; width: 300px; height: 300px; background: rgba(108, 92, 231, 0.1); filter: blur(80px); border-radius: 50%;">
+    </div>
+
+    <div style="max-width: 1100px; margin: 0 auto; position: relative; z-index: 2;">
+
+      <h2 style="
+            text-align: center; 
+            font-size: 2.8rem; 
+            margin-bottom: 60px; 
+            color: #2d1b4e; /* Violet très foncé pour le contraste */
+        ">À propos de <span style="color: #6c5ce7; text-shadow: 2px 2px 10px rgba(108, 92, 231, 0.2);">moi</span></h2>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+
+        <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 30px;">
+
+          <div
+            style="background: #ffffff; padding: 35px; border-radius: 30px; border: 1px solid #e1e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+            <h3 style="color: #6c5ce7; margin-top: 0; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+
+              Mon Parcours
+            </h3>
+            <p style="font-size: 0.95rem; line-height: 1.7; color: #636e72;">
+              Étudiante en 2ème année de BTS SIO, je me spécialise dans la création de solutions logicielles.
+              Mon approche combine rigueur technique et curiosité pour les nouvelles technologies.
+            </p>
+
+            <div style="margin-top: 25px; border-left: 2px solid #efeffd; padding-left: 20px;">
+              <div style="margin-bottom: 20px; position: relative;">
+                <div
+                  style="position: absolute; left: -26px; top: 5px; width: 10px; height: 10px; background: #6c5ce7; border-radius: 50%; box-shadow: 0 0 8px rgba(108, 92, 231, 0.5);">
+                </div>
+                <span style="font-size: 0.75rem; color: #a29bfe; font-weight: 700; letter-spacing: 0.5px;">2024 -
+                  PRÉSENT</span>
+                <h4 style="margin: 5px 0; color: #2d1b4e; font-size: 1.1rem;">BTS SIO - SLAM</h4>
+                <small style="color: #94a3b8; font-weight: 500;">Lycée du Parc des Loges, Évry</small>
+              </div>
+              <div style="position: relative;">
+                <div
+                  style="position: absolute; left: -26px; top: 5px; width: 10px; height: 10px; background: #cbd5e1; border-radius: 50%;">
+                </div>
+                <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 700; letter-spacing: 0.5px;">2022 -
+                  2024</span>
+                <h4 style="margin: 5px 0; color: #2d1b4e; font-size: 1.1rem;">Bac STMG - SIG</h4>
+                <small style="color: #94a3b8; font-weight: 500;">Lycée du Parc des Loges, Évry</small>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="background: #ffffff; padding: 35px; border-radius: 30px; border: 1px solid #e1e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+            <h3 style="color: #6c5ce7; margin-top: 0; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+
+              Expériences Professionnelles
+            </h3>
+
+            <div style="margin-top: 25px; border-left: 2px solid #efeffd; padding-left: 20px;">
+              <div style="margin-bottom: 30px; position: relative;">
+                <div
+                  style="position: absolute; left: -26px; top: 5px; width: 10px; height: 10px; background: #6c5ce7; border-radius: 50%; box-shadow: 0 0 8px rgba(108, 92, 231, 0.5);">
+                </div>
+                <span style="font-size: 0.75rem; color: #a29bfe; font-weight: 700;">2026 • STAGE 2ÈME ANNÉE</span>
+                <h4 style="margin: 5px 0; color: #2d1b4e;">Développeur Web - Franafrix</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin: 8px 0;">Création de site internet et optimisation
+                  de
+                  la visibilité numérique.</p>
+                <a href="projet6.html"
+                  style="color: #6c5ce7; font-size: 0.8rem; text-decoration: none; font-weight: 700; border-bottom: 1px solid #6c5ce7; padding-bottom: 2px;">Voir
+                  le projet</a>
+              </div>
+              <div style="position: relative;">
+                <div
+                  style="position: absolute; left: -26px; top: 5px; width: 10px; height: 10px; background: #a29bfe; border-radius: 50%;">
+                </div>
+                <span style="font-size: 0.75rem; color: #a29bfe; font-weight: 700;">2025 • STAGE 1ÈRE ANNÉE</span>
+                <h4 style="margin: 5px 0; color: #2d1b4e;">Développement Web - Aide à domicile</h4>
+                <p style="font-size: 0.85rem; color: #636e72; margin: 8px 0;">Conception d'un site vitrine complet pour
+                  services à la personne.</p>
+                <a href="projet3.html"
+                  style="color: #6c5ce7; font-size: 0.8rem; text-decoration: none; font-weight: 700; border-bottom: 1px solid #6c5ce7; padding-bottom: 2px;">Voir
+                  le projet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="flex: 1.5; min-width: 350px;">
+          <div
+            style="background: #ffffff; border-radius: 30px; overflow: hidden; border: 1px solid #e1e8f0; box-shadow: 0 20px 40px rgba(108, 92, 231, 0.08);">
+
+            <div
+              style="background: #f1f5f9; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center;">
+              <div style="display: flex; gap: 8px;">
+                <div style="width: 10px; height: 10px; background: #ff5f56; border-radius: 50%;"></div>
+                <div style="width: 10px; height: 10px; background: #ffbd2e; border-radius: 50%;"></div>
+                <div style="width: 10px; height: 10px; background: #27c93f; border-radius: 50%;"></div>
+              </div>
+              <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">aperçu-cv-rania.html</span>
+            </div>
+
+            <div
+              style="width: 100%; height: 600px; overflow-y: auto; overflow-x: hidden; background: white; position: relative; scrollbar-width: thin; scrollbar-color: #6c5ce7 #f1f5f9;">
+              <div
+                style="width: 950px; transform: scale(0.68); transform-origin: top left; margin-bottom: -350px; margin-left: 2px;">
+                <iframe src="cv-rania-madmar.html" style="
+                    width: 950px; 
+                    height: 1150px; 
+                    border: none; 
+                    display: block;
+                ">
+                </iframe>
+              </div>
+            </div>
+
+            <div style="padding: 25px; text-align: center; background: #fafbff; border-top: 1px solid #eee;">
+              <a href="cv-rania-madmar.pdf" download style="
+            text-decoration: none; 
+            background: #6c5ce7; 
+            color: white; 
+            padding: 14px 35px; 
+            border-radius: 50px; 
+            font-weight: 600; 
+            font-size: 0.9rem;
+            display: inline-block;
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.2);
+        ">
+                📥 Télécharger le CV (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Description du BTS SIO + options -->
+  <div style="
+    padding: 120px 20px; 
+    background: #0f0c29; /* Fond sombre pour faire ressortir la lumière */
+    background: radial-gradient(circle at 20% 30%, #2d1b4e 0%, #0a0a12 100%); 
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+">
+    <div
+      style="position: absolute; top: -10%; left: 10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(108, 92, 231, 0.3) 0%, rgba(108, 92, 231, 0) 70%); border-radius: 50%; z-index: 1;">
+    </div>
+    <div
+      style="position: absolute; bottom: -10%; right: 5%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(0, 212, 255, 0.2) 0%, rgba(0, 212, 255, 0) 70%); border-radius: 50%; z-index: 1;">
+    </div>
+    <div
+      style="position: absolute; top: 40%; right: 20%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(162, 155, 254, 0.15) 0%, rgba(162, 155, 254, 0) 70%); border-radius: 50%; z-index: 1;">
+    </div>
+
+    <div style="max-width: 1100px; margin: 0 auto; position: relative; z-index: 2;">
+
+      <div style="text-align: center; margin-bottom: 80px;">
+        <h3 style="
+                font-size: 3rem; 
+                font-weight: 800;
+                margin-bottom: 20px;
+                background: linear-gradient(to bottom, #ffffff, #a29bfe);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                filter: drop-shadow(0 0 10px rgba(162, 155, 254, 0.5));
+            ">Le cursus BTS SIO</h3>
+        <div
+          style="width: 80px; height: 5px; background: linear-gradient(to right, #6c5ce7, #00d4ff); margin: 0 auto; border-radius: 10px; box-shadow: 0 0 15px #6c5ce7;">
+        </div>
+      </div>
+
+      <div style="
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 40px; 
+            justify-content: center;
+            align-items: stretch;
+        ">
+        <div style="
+                flex: 1; 
+                min-width: 320px; 
+                background: rgba(255, 255, 255, 0.05); 
+                border: 1px solid rgba(255, 255, 255, 0.1); 
+                padding: 50px 40px; 
+                border-radius: 40px; 
+                backdrop-filter: blur(25px);
+                -webkit-backdrop-filter: blur(25px);
+            ">
+          <h4 style="color: #8395a7; margin: 0; font-size: 1.6rem; font-weight: 700;">Option SISR</h4>
+          <p style="color: #b2bec3; font-size: 0.95rem; line-height: 1.8; margin-top: 20px;">
+            Solutions d’Infrastructure, Systèmes et Réseaux. Spécialisation dans le déploiement et la sécurisation des
+            environnements informatiques.
+          </p>
+        </div>
+
+        <div style="
+                flex: 1.2; 
+                min-width: 320px; 
+                background: rgba(108, 92, 231, 0.1); 
+                border: 2px solid #a29bfe; 
+                padding: 50px 40px; 
+                border-radius: 40px; 
+                position: relative;
+                box-shadow: 0 0 40px rgba(108, 92, 231, 0.4), inset 0 0 20px rgba(162, 155, 254, 0.2);
+                backdrop-filter: blur(25px);
+                -webkit-backdrop-filter: blur(25px);
+            ">
+          <div style="
+                    position: absolute; 
+                    top: -18px; 
+                    left: 40px; 
+                    background: #6c5ce7; 
+                    color: #fff; 
+                    padding: 8px 25px; 
+                    border-radius: 15px; 
+                    font-size: 0.8rem; 
+                    font-weight: 800;
+                    box-shadow: 0 0 20px #6c5ce7;
+                ">MON EXPERTISE</div>
+
+          <h4
+            style="color: #ffffff; margin: 0; font-size: 1.8rem; font-weight: 800; text-shadow: 0 0 10px rgba(255,255,255,0.3);">
+            Option SLAM</h4>
+          <p style="color: #ffffff; font-size: 1.05rem; line-height: 1.8; margin-top: 20px; font-weight: 400;">
+            <strong>Solutions Logicielles et Applications Métiers.</strong> Conception, développement et maintenance
+            corrective des parcs applicatifs.
+          </p>
+
+          <div style="
+                    margin-top: 30px; 
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                ">
+            <span
+              style="font-size: 0.8rem; background: #6c5ce7; color: white; padding: 6px 16px; border-radius: 10px; box-shadow: 0 0 10px rgba(108, 92, 231, 0.5);">💻
+              Full-Stack</span>
+            <span
+              style="font-size: 0.8rem; background: rgba(255,255,255,0.1); border: 1px solid #a29bfe; color: white; padding: 6px 16px; border-radius: 10px;">🗄️
+              SQL / NoSQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION COMPÉTENCES -->
+  <section id="competences" style="
+      padding: 100px 20px; 
+      background: #f8f9fc; 
+      color: #2d3436; 
+      font-family: 'Poppins', sans-serif;
+  ">
+    <div style="max-width: 1200px; margin: 0 auto;">
+
+      <h2 style="
+              text-align: center; 
+              font-size: 2.8rem; 
+              margin-bottom: 60px; 
+              color: #2d1b4e;
+          ">Mes <span style="color: #6c5ce7; text-shadow: 2px 2px 10px rgba(108, 92, 231, 0.1);">Compétences</span>
+      </h2>
+
+      <div style="
+              display: grid; 
+              grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+              gap: 30px;
+          ">
+
+        <div
+          style="background: #ffffff; border: 1px solid #e1e8f0; padding: 35px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+          <h3
+            style="color: #6c5ce7; border-bottom: 2px solid #efeffd; padding-bottom: 15px; margin-bottom: 25px; font-weight: 700;">
+            Développement
+          </h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="php.png" width="40" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">CodeIgniter</span>
+            </div>
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="python.png" width="40" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">Python</span>
+            </div>
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="java.png" width="40" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">Java (POO)</span>
+            </div>
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="javascript.png" width="40" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">JS / HTML / CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="background: #ffffff; border: 1px solid #e1e8f0; padding: 35px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+          <h3
+            style="color: #6c5ce7; border-bottom: 2px solid #efeffd; padding-bottom: 15px; margin-bottom: 25px; font-weight: 700;">
+            Bases de Données & XML
+          </h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="mysql.png" width="40" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">MySQL / SQL</span>
+            </div>
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="xml.png" width="40" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">XML / JSON</span>
+            </div>
+            <div
+              style="text-align: center; grid-column: span 2; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="uml.png" width="40" style="margin-bottom: 8px;"><br>
+
+              <span style="font-size: 0.85rem; color: #636e72;">Modélisation Merise & UML (StarUML)</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="background: #ffffff; border: 1px solid #e1e8f0; padding: 35px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+          <h3
+            style="color: #6c5ce7; border-bottom: 2px solid #efeffd; padding-bottom: 15px; margin-bottom: 25px; font-weight: 700;">
+            Systèmes & Outils
+          </h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="windows.png" width="35" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">Windows</span>
+            </div>
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="apple.png" width="35" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">macOS</span>
+            </div>
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="github-logo.png" width="35" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">Git / GitHub</span>
+            </div>
+            <div
+              style="text-align: center; padding: 15px; background: #fcfcff; border: 1px solid #f0f0ff; border-radius: 20px;">
+              <img src="visualstudiocode.png" width="35" style="margin-bottom: 8px;"><br>
+              <span style="font-size: 0.8rem; font-weight: 700; color: #2d1b4e;">VS Code</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION : MES PROJETS -->
+  <section id="projets" style="
+    padding: 120px 20px; 
+    background: #fdfdfd; 
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+">
+    <div
+      style="position: absolute; top: -10%; left: -5%; width: 400px; height: 400px; background: rgba(162, 155, 254, 0.1); filter: blur(100px); border-radius: 50%;">
+    </div>
+    <div
+      style="position: absolute; bottom: 10%; right: -5%; width: 300px; height: 300px; background: rgba(0, 212, 255, 0.08); filter: blur(80px); border-radius: 50%;">
+    </div>
+
+    <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
+
+      <div style="text-align: center; margin-bottom: 90px;">
+        <span
+          style="font-size: 0.85rem; background: rgba(108, 92, 231, 0.1); color: #6c5ce7; padding: 6px 20px; border-radius: 20px; font-weight: 700; letter-spacing: 1px;">PORTFOLIO</span>
+        <h2 style="
+                font-size: 3.2rem; 
+                font-weight: 900; 
+                color: #2d1b4e; 
+                margin: 15px 0;
+                letter-spacing: -1px;
+            ">Mes <span
+            style="background: linear-gradient(to right, #6c5ce7, #a29bfe); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Projets
+          </span></h2>
+        <div style="width: 100px; height: 6px; background: #6c5ce7; border-radius: 10px; margin: 0 auto;"></div>
+      </div>
+
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; align-items: stretch;">
+
+        <div class="projet-card" style="
+                background-image: linear-gradient(to bottom, rgba(45, 27, 78, 0.3), rgba(45, 27, 78, 0.9)), url('franafrix.jpg');
+                background-size: cover;
+                background-position: center;
+                border-radius: 30px;
+                padding: 40px;
+                color: white;
+                height: 450px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                box-shadow: 0 15px 35px rgba(108, 92, 231, 0.2);
+                transition: transform 0.4s ease, box-shadow 0.4s ease;
+                border: 2px solid rgba(162, 155, 254, 0.2);
+                cursor: pointer;
+            "
+          onmouseover="this.style.transform='translateY(-10px) scale(1.02)'; this.style.boxShadow='0 25px 50px rgba(108, 92, 231, 0.4)';"
+          onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 15px 35px rgba(108, 92, 231, 0.2)';">
+          <span style="font-size: 0.75rem; color: #a29bfe; font-weight: 800; letter-spacing: 1px;">JANV - FÉV
+            2026</span>
+          <h3 style="font-size: 1.8rem; font-weight: 800; margin: 10px 0; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Audit
+            IT & Web - Franafrix</h3>
+          <p style="font-size: 0.95rem; opacity: 0.9; line-height: 1.6; margin-bottom: 20px; font-weight: 300;">Refonte
+            de
+            l'écosystème numérique et optimisation SEO.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+            <span
+              style="font-size: 0.7rem; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: 8px; font-weight: 600;">WEB
+              DESIGN</span>
+            <span
+              style="font-size: 0.7rem; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: 8px; font-weight: 600;">SEO/VISIBILITÉ</span>
+          </div>
+          <a href="projet7.html"
+            style="text-decoration: none; color: white; font-weight: 700; border-bottom: 2px solid #a29bfe; padding-bottom: 3px; align-self: flex-start;">En
+            savoir plus</a>
+        </div>
+
+        <div class="projet-card" style="
+                background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('fripouille.jpg');
+                background-size: cover; background-position: center; border-radius: 30px; padding: 40px; color: white; height: 450px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.4s;
+            " onmouseover="this.style.transform='translateY(-10px)';"
+          onmouseout="this.style.transform='translateY(0)';">
+          <span style="font-size: 0.75rem; color: #cbd5e1; font-weight: 700;">DÉCEMBRE 2025</span>
+          <h3 style="font-size: 1.6rem; font-weight: 800; margin: 10px 0;">App Ventes Éphémères - Fripouille</h3>
+          <p style="font-size: 0.9rem; opacity: 0.9; line-height: 1.6; margin-bottom: 20px;">Mise en place d'un
+            catalogue
+            dynamique sous architecture MVC.</p>
+          <div style="margin-bottom: 10px; color: #a29bfe; font-size: 0.75rem; font-weight: 700;">JAVA MVC • SQL BDD
+          </div>
+          <a href="projet6.html"
+            style="color: white; font-weight: 700; text-decoration: none; border-bottom: 2px solid white;">En savoir
+            plus</a>
+        </div>
+
+        <div class="projet-card" style="
+                background-image: linear-gradient(to bottom, rgba(45, 27, 78, 0.3), rgba(45, 27, 78, 0.9)), url('hebsio.jpg');
+                background-size: cover; background-position: center; border-radius: 30px; padding: 40px; color: white; height: 450px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.4s;
+            " onmouseover="this.style.transform='translateY(-10px)';"
+          onmouseout="this.style.transform='translateY(0)';">
+          <span style="font-size: 0.75rem; color: #a29bfe; font-weight: 700;">OCTOBRE 2025</span>
+          <h3 style="font-size: 1.6rem; font-weight: 800; margin: 10px 0;">Gestion Pénitentiaire - Hebsio</h3>
+          <p style="font-size: 0.9rem; opacity: 0.9; line-height: 1.6; margin-bottom: 20px;">Focus sur la qualité
+            logicielle et l'intégration de tests unitaires.</p>
+          <div style="margin-bottom: 10px; color: #a29bfe; font-size: 0.75rem; font-weight: 700;">JAVA • JUNIT TESTS •
+            MVC
+          </div>
+          <a href="projet5.html"
+            style="color: white; font-weight: 700; text-decoration: none; border-bottom: 2px solid white;">En savoir
+            plus</a>
+        </div>
+
+        <div class="projet-card" style="
+                background-image: linear-gradient(to bottom, rgba(0, 184, 212, 0.2), rgba(0,0,0,0.85)), url('getcet.jpg');
+                background-size: cover; background-position: center; border-radius: 30px; padding: 40px; color: white; height: 450px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.4s; border: 2px solid rgba(0, 212, 255, 0.2);
+            " onmouseover="this.style.transform='translateY(-10px)'; this.style.borderColor='#00d4ff';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(0, 212, 255, 0.2)';">
+          <span style="font-size: 0.75rem; color: #00d4ff; font-weight: 700;">SEPT - NOV 2025</span>
+          <h3
+            style="font-size: 1.6rem; font-weight: 800; margin: 10px 0; text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);">
+            App Web EPI’Solidaire</h3>
+          <p style="font-size: 0.9rem; opacity: 0.9; line-height: 1.6; margin-bottom: 20px;">Développement d'une
+            solution
+            MVC de gestion sociale (Génération PDF).</p>
+          <div style="margin-bottom: 10px; color: #00d4ff; font-size: 0.75rem; font-weight: 700;">PHP MVC • FPDF LIB •
+            SQL
+          </div>
+          <a href="projet4.html"
+            style="color: white; font-weight: 700; text-decoration: none; border-bottom: 2px solid #00d4ff;">En savoir
+            plus</a>
+        </div>
+
+        <div class="projet-card" style="
+                background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('hestia.jpg');
+                background-size: cover; background-position: center; border-radius: 30px; padding: 40px; color: white; height: 450px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.4s;
+            " onmouseover="this.style.transform='translateY(-10px)';"
+          onmouseout="this.style.transform='translateY(0)';">
+          <span style="font-size: 0.75rem; color: #cbd5e1; font-weight: 700;">MAI - JUIN 2025</span>
+          <h3 style="font-size: 1.6rem; font-weight: 800; margin: 10px 0;">Site Web Hestia - Aide à domicile</h3>
+          <p style="font-size: 0.9rem; opacity: 0.9; line-height: 1.6; margin-bottom: 20px;">Conception responsive et
+            optimisation SEO pour site vitrine.</p>
+          <div style="margin-bottom: 10px; color: #a29bfe; font-size: 0.75rem; font-weight: 700;">HTML/CSS/JS •
+            GIT/GITHUB
+          </div>
+          <a href="projet3.html"
+            style="color: white; font-weight: 700; text-decoration: none; border-bottom: 2px solid white;">En savoir
+            plus</a>
+        </div>
+
+        <div class="projet-card" style="
+                background-image: linear-gradient(to bottom, rgba(45, 27, 78, 0.3), rgba(45, 27, 78, 0.9)), url('ihm.jpg');
+                background-size: cover; background-position: center; border-radius: 30px; padding: 40px; color: white; height: 450px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.4s;
+            " onmouseover="this.style.transform='translateY(-10px)';"
+          onmouseout="this.style.transform='translateY(0)';">
+          <span style="font-size: 0.75rem; color: #a29bfe; font-weight: 700;">AVRIL 2025</span>
+          <h3 style="font-size: 1.6rem; font-weight: 800; margin: 10px 0;">Logiciel Java avec IHM Swing</h3>
+          <p style="font-size: 0.9rem; opacity: 0.9; line-height: 1.6; margin-bottom: 20px;">Gestion d'utilisateurs via
+            interface graphique interactive (POO).</p>
+          <div style="margin-bottom: 10px; color: #a29bfe; font-size: 0.75rem; font-weight: 700;">JAVA SWING • POO
+            ECLIPSE
+          </div>
+          <a href="projet2.html"
+            style="color: white; font-weight: 700; text-decoration: none; border-bottom: 2px solid white;">En savoir
+            plus</a>
+        </div>
+
+        <div class="projet-card" style="
+                background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('sk.jpg');
+                background-size: cover; background-position: center; border-radius: 30px; padding: 40px; color: white; height: 450px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: 0.4s;
+            " onmouseover="this.style.transform='translateY(-10px)';"
+          onmouseout="this.style.transform='translateY(0)';">
+          <span style="font-size: 0.75rem; color: #cbd5e1; font-weight: 700;">NOV 2024 - AVRIL 2025</span>
+          <h3 style="font-size: 1.6rem; font-weight: 800; margin: 10px 0;">Site Marchand SkinCosmetic</h3>
+          <p style="font-size: 0.9rem; opacity: 0.9; line-height: 1.6; margin-bottom: 20px;">Développement e-commerce
+            complet : inscriptions, panier, SQL.</p>
+          <div style="margin-bottom: 10px; color: #a29bfe; font-size: 0.75rem; font-weight: 700;">FULLSTACK WEB • MYSQL
+          </div>
+          <a href="projet1.html"
+            style="color: white; font-weight: 700; text-decoration: none; border-bottom: 2px solid white;">En savoir
+            plus</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="veille" style="padding: 120px 20px; background: #ffffff; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+
+      <div style="text-align: center; margin-bottom: 70px;">
+        <span
+          style="background: rgba(108, 92, 231, 0.1); color: #6c5ce7; padding: 6px 20px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; letter-spacing: 1px;">VEILLE
+          TECHNOLOGIQUE</span>
+        <h2 style="font-size: 2.8rem; font-weight: 800; color: #2d1b4e; margin: 15px 0;">L'Accessibilité <span
+            style="color: #6c5ce7;">Numérique</span></h2>
+        <p style="color: #636e72; max-width: 700px; margin: 0 auto; font-size: 1.1rem;">
+          Comment l'innovation technologique permet-elle de lever les barrières du handicap dans le monde digital ?
+        </p>
+      </div>
+
+
+
+      <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin-bottom: 60px;">
+        <div
+          style="background: #2d1b4e; color: white; padding: 40px; border-radius: 30px; box-shadow: 0 15px 35px rgba(45, 27, 78, 0.2);">
+          <h3 style="color: #a29bfe; font-size: 1.4rem; margin-top: 0;">Ma Méthodologie</h3>
+          <p style="font-size: 0.9rem; opacity: 0.8;">Pour cette veille, j'utilise une stratégie de collecte automatisée
+            :
+          </p>
+          <ul style="list-style: none; padding: 0; font-size: 0.85rem;">
+            <li style="margin-bottom: 15px;">🔍 <strong>Moteurs de recherche :</strong> Alertes Google sur "Web
+              Accessibility", "IA & Handicap".</li>
+            <li style="margin-bottom: 15px;">📰 <strong>Agrégateurs :</strong> Feedly pour suivre les blogs de Meta AI,
+              Microsoft Accessibility et le W3C.</li>
+            <li style="margin-bottom: 15px;">📱 <strong>Réseaux :</strong> Veille active sur LinkedIn via les experts en
+              accessibilité numérique.</li>
+          </ul>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div style="background: #f8f9fc; padding: 25px; border-radius: 25px; border: 1px solid #e1e8f0;">
+            <div style="font-size: 1.5rem; margin-bottom: 10px;">💡</div>
+            <h4 style="margin: 0 0 10px 0; color: #2d1b4e;">Accessibilité Numérique</h4>
+            <p style="font-size: 0.85rem; color: #636e72; margin: 0;">Rendre les services digitaux utilisables par tous,
+              indépendamment des capacités physiques ou mentales.</p>
+          </div>
+          <div style="background: #f8f9fc; padding: 25px; border-radius: 25px; border: 1px solid #e1e8f0;">
+            <div style="font-size: 1.5rem; margin-bottom: 10px;">⚖️</div>
+            <h4 style="margin: 0 0 10px 0; color: #2d1b4e;">Cadre Légal (RGAA)</h4>
+            <p style="font-size: 0.85rem; color: #636e72; margin: 0;">Conformité à la loi du 11 février 2005 et respect
+              des normes internationales WCAG.</p>
+          </div>
+          <div style="background: #f8f9fc; padding: 25px; border-radius: 25px; border: 1px solid #e1e8f0;">
+            <div style="font-size: 1.5rem; margin-bottom: 10px;">🚀</div>
+            <h4 style="margin: 0 0 10px 0; color: #2d1b4e;">Inclusion & Innovation</h4>
+            <p style="font-size: 0.85rem; color: #636e72; margin: 0;">L'accessibilité ne profite pas qu'aux handicapés :
+              elle améliore l'UX pour tous (ex: sous-titres).</p>
+          </div>
+          <div style="background: #f8f9fc; padding: 25px; border-radius: 25px; border: 1px solid #e1e8f0;">
+            <div style="font-size: 1.5rem; margin-bottom: 10px;">🧠</div>
+            <h4 style="margin: 0 0 10px 0; color: #2d1b4e;">IA Assistive</h4>
+            <p style="font-size: 0.85rem; color: #636e72; margin: 0;">L'intelligence artificielle devient le moteur
+              principal de l'autonomie numérique.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; border-top: 2px dashed #e1e8f0; padding-top: 50px; margin-top: 50px;">
+        <p style="font-weight: 700; color: #2d1b4e;">Flux d'actualités et analyses ↓</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  </div>
+
+
+  <!-- Titre de la frise -->
+
+  <div style="text-align: center; margin-bottom: 50px; font-family: 'Poppins', sans-serif; padding: 0 20px;">
+    <span
+      style="color: #6c5ce7; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;">Analyses
+      & Actualités</span>
+    <h2 style="color: #2d1b4e; font-size: 2.8rem; font-weight: 900; line-height: 1.2; margin: 10px 0;">
+      Articles de <span style="position: relative; z-index: 1;">Veille <span
+          style="position: absolute; bottom: 8px; left: 0; width: 100%; height: 12px; background: rgba(108, 92, 231, 0.15); z-index: -1;"></span></span>
+      Technologique
+    </h2>
+    <p style="color: #636e72; font-size: 1.1rem; margin: 15px auto; max-width: 700px;">
+      Décryptage détaillé des dernières innovations et de leur impact sur le développement d'applications accessibles.
+    </p>
+  </div>
+
+  <div
+    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px; font-family: 'Poppins', sans-serif;">
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">RGAA 2026 : La nouvelle version du référentiel est
+          là
+        </h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>numérique.gouv.fr
+            (DINUM)</strong> | Mars 2026</p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">La DINUM publie la nouvelle
+            version du RGAA. Cette mise à jour s'adapte aux nouvelles technologies (IA, interfaces complexes) et
+            renforce
+            les contrôles sur les services publics et les grandes entreprises.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Cette version intègre les
+            recommandations du <strong>WCAG 2.2</strong>. Elle ajoute des critères sur la <strong>gestion du
+              focus</strong>, la taille des cibles tactiles et impose des tests poussés sur les composants
+            <strong>JavaScript</strong>.
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">C'est l'article le plus
+            important
+            : il montre que les normes évoluent. Le passage au RGAA 2026 va demander une mise à jour de nos méthodes de
+            développement.</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://www.numerique.gouv.fr/actualites/nouvelle-version-rgaa-2026/" target="_blank"
+            style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Découvrir le
+            référentiel</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">Journée du Braille : Le défi de l'accès à
+          l'information</h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>Big Media (Bpifrance)</strong>
+          |
+          Janvier 2026</p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Rappel que pour les 1,7 million
+            de déficients visuels en France, l'accès au web reste un combat. Mise en avant des outils traduisant
+            instantanément le texte en braille ou en son.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Repose sur les <strong>plages
+              braille éphémères</strong>. Le développeur doit coder de manière sémantique avec des <strong>balises
+              ARIA</strong> et des labels clairs pour une retranscription correcte.</p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Le braille reste essentiel pour
+            l'autonomie. Cela renforce mon idée que le code est le premier levier d'inclusion sociale aujourd'hui.</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://bigmedia.bpifrance.fr/nos-dossiers/journee-mondiale-du-braille-un-enjeu-daccessibilite-numerique"
+            target="_blank" style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Lire
+            l'article complet</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">Accessibilité en entreprise : État des lieux fin
+          2025
+        </h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>Écoréseau Business</strong> |
+          Nov. 2025</p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Quelques mois après l'échéance
+            de
+            la loi européenne, beaucoup d'entreprises sont encore en retard. L'accessibilité est une opportunité de
+            toucher plus de clients, pas une contrainte.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Le retard s'explique par la
+            <strong>dette technique</strong>. Solution : <strong>audits de conformité</strong> réguliers et tests
+            automatisés dans la <strong>chaîne CI/CD</strong>.
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Il y aura énormément de travail
+            pour les développeurs SLAM. La mise en conformité est un chantier permanent, pas une action unique.</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://www.ecoreseau.fr/actualites/accessibilite-numerique-des-entreprises-ou-en-etes-vous-2025-11-19-118209"
+            target="_blank" style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Lire
+            l'article complet</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">Directive Européenne : Ce qui change concrètement
+        </h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>Ouest-France</strong> | Juin
+          2025
+        </p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">La loi transforme le quotidien
+            :
+            DAB, e-commerce et banques doivent être accessibles pour mettre fin à la "double peine" des personnes
+            handicapées.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Pour les terminaux physiques,
+            cela
+            impose une couche logicielle compatible lecteurs d'écran. Pour le Web : <strong>focus clavier</strong> et
+            <strong>contrastes dynamiques</strong>.
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Cet article humanise la
+            technique. Derrière chaque <code>tabindex</code> ou <code>alt</code>, il y a une personne qui gagne en
+            autonomie.</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://www.ouest-france.fr/sante/handicaps/handicap-ce-que-change-la-nouvelle-directive-europeenne-sur-laccessibilite-numerique-5c6517a8-542e-11f0-acb7-473b370f0632"
+            target="_blank" style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Lire
+            l'article complet</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">L'IA de Meta : Des lunettes qui voient pour les
+          malvoyants</h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>Financial Times</strong> | Mars
+          2025</p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Mise à jour des Ray-Ban Meta
+            avec
+            une IA décrivant le monde en temps réel : lecture de menus, identification d'objets ou description de rues
+            par
+            la voix.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Repose sur l'<strong>IA
+              Multimodale</strong> et la <strong>Computer Vision</strong>. Analyse du flux vidéo par algorithmes et
+            transformation en langage naturel (synthèse vocale).</p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Révolutionnaire car
+            l'accessibilité sort de l'ordinateur. L'IA devient l'outil n°1 pour briser les barrières du handicap visuel.
+          </p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://www.ft.com/content/77bd9117-0a2d-4bd7-9248-4dd288f695a4" target="_blank"
+            style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Consulter la source
+            (FT)</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">Comité Handicap 2025 : Accélération du numérique
+        </h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>info.gouv.fr</strong> | Mai
+          2025
+        </p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Annonce de mesures pour
+            simplifier la vie : accélération de l'accessibilité des sites publics et création d'un "sac à dos numérique"
+            regroupant les aides.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Interopérabilité des SI de
+            l'État
+            via des <strong>APIs sécurisées</strong> pour partager les données et respect strict du
+            <strong>RGAA</strong>
+            pour l'interface utilisateur.
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">L'accessibilité devient un
+            projet
+            centralisé et global. C'est motivant de voir l'impact social direct du développement web.</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://www.info.gouv.fr/actualite/ce-quil-faut-retenir-du-comite-interministeriel-du-handicap-2025"
+            target="_blank" style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Voir
+            les mesures clés</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">CES 2025 : L'explosion de la "Assistive Tech"</h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>Connsense Report</strong> |
+          Fév.
+          2025</p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Le salon CES 2025 a récompensé
+            13
+            innovations : lunettes intelligentes, appareils traduisant la pensée en texte, et robots d'assistance pour
+            seniors.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Utilisation de la
+            <strong>Multimodalité</strong>. Arrivée des <strong>BCI (Interfaces Cerveau-Ordinateur)</strong> captant les
+            signaux cérébraux et du <strong>Deep Learning</strong>.
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">L'accessibilité n'est plus un
+            petit sujet, c'est un moteur d'innovation mondial. La tech devient naturellement "assistive".</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://connsensereport.com/2025/02/03/13-ces-2025-award-winning-assistive-tech-innovations-for-healthcare-professionals-to-know-about/"
+            target="_blank" style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Voir
+            les innovations</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">Microsoft : L'accessibilité comme moteur de
+          productivité</h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>Microsoft Adoption</strong> |
+          Janv. 2025</p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Bibliothèque de scénarios pro :
+            Lecteur immersif, sous-titres Teams et Vérificateur d'accessibilité intégré à la suite Office.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Utilise l'IA (Cognitive
+            Services)
+            pour le <strong>STT</strong>. Repose sur l'implémentation des normes <strong>WCAG</strong> nativement dans
+            les
+            applications de bureau.</p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">L'accessibilité concerne tous
+            les
+            outils de travail. C'est crucial pour éviter les erreurs d'inclusion lors de la création de contenu.</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://adoption.microsoft.com/fr-fr/scenario-library/accessibility/" target="_blank"
+            style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Voir la bibliothèque
+            MS</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">iOS : Les fonctions d'accessibilité intégrées par
+          défaut</h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>Apple Support</strong> | Guide
+          2024</p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Outils natifs iPhone
+            (VoiceOver,
+            Loupe, Contrôle Vocal) pour compenser les handicaps visuels, auditifs ou moteurs.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Fonctionne via les
+            <strong>Accessibility APIs</strong> d'iOS. Importance cruciale des <strong>labels d'accessibilité</strong>
+            dans le code Swift/SwiftUI.
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Apple intègre l'accessibilité
+            au
+            cœur de l'OS. C'est la référence absolue pour créer des apps mobiles inclusives.</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://support.apple.com/fr-fr/guide/iphone/iph66057d0f6/ios" target="_blank"
+            style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Voir le guide
+            Apple</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background: #fff; border: 2px solid #2d1b4e; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="background: #2d1b4e; padding: 20px; color: white;">
+        <h3 style="margin: 0; font-size: 1.1rem; line-height: 1.3;">L’accessibilité numérique : Une priorité stratégique
+        </h3>
+        <p style="margin: 5px 0 0 0; opacity: 0.8; font-size: 0.75rem;">Source : <strong>numérique.gouv.fr</strong> |
+          Nov.
+          2024</p>
+      </div>
+      <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
+        <div style="margin-bottom: 15px;">
+          <span
+            style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">Le
+            Résumé (Quoi ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">Engagement de l'État pour 100%
+            de
+            services publics accessibles. Présentation d'outils concrets pour aider les administrations à corriger leurs
+            sites.</p>
+        </div>
+        <div style="margin-bottom: 15px; background: #f9f9ff; padding: 15px; border-radius: 8px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Analyse
+            Technique
+            (Comment ?)</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.8rem;">Utilisation d'audits
+            <strong>Ara</strong> et <strong>Vault</strong>. Analyse du <strong>DOM</strong> pour vérifier le respect des
+            106 critères de la norme <strong>RGAA 4.1</strong>.
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <span style="color: #6c5ce7; font-weight: 800; text-transform: uppercase; font-size: 0.7rem;">Enjeu & Avis
+            Personnel</span>
+          <p style="margin-top: 5px; color: #444; line-height: 1.5; font-size: 0.85rem;">L'accessibilité devient une
+            priorité officielle. Un signal fort pour maîtriser ces normes en tant que professionnel.</p>
+        </div>
+        <div style="margin-top: auto; border-top: 1px solid #eee; padding-top: 15px; text-align: right;">
+          <a href="https://www.numerique.gouv.fr/actualites/seeph-2024-laccessibilit%C3%A9-num%C3%A9rique-une-priorit%C3%A9-pour-le-num%C3%A9rique-de-l%C3%A9tat/"
+            target="_blank" style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.8rem;">🔗 Voir
+            l'article complet</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+    /* Animation d'entrée pour les éléments avec la classe .apparition */
+    .apparition {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    /* Classe ajoutée par le JavaScript quand on scroll */
+    .apparition.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+
+
+
+  <!-- SCRIPT : Effet de disparition de la fumée -->
+  <script>
+    // Quand on scroll sur la page
+    window.addEventListener('scroll', function () {
+
+      // On récupère la section "accueil"
+      const accueil = document.querySelector('.accueil');
+
+      // On récupère l'effet de fumée
+      const fumee = document.querySelector('.fumee-arriere-plan');
+
+      // On récupère un éventuel élément avec l'effet de fade (si tu l’utilises)
+      const elementFade = document.querySelector('.fade-sur-defilement');
+
+      // On calcule la position du bas de la section accueil par rapport au haut de l’écran
+      const positionAccueil = accueil.getBoundingClientRect().bottom;
+
+      // Si la section "accueil" est presque complètement sortie de l'écran (en haut)
+      if (positionAccueil < window.innerHeight / 2) {
+
+        // On ajoute la classe qui rend la fumée invisible + effet fade si utilisé
+        fumee.classList.add('defile');
+        elementFade?.classList.add('defile'); // le ? évite une erreur si elementFade n'existe pas
+      } else {
+
+        // Sinon, on enlève la classe : la fumée revient
+        fumee.classList.remove('defile');
+        elementFade?.classList.remove('defile');
+      }
+    });
+  </script>
+
+
+
+  <script>
+    const videos = document.querySelectorAll('.video-auto');
+
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
+      });
+    }, {
+      threshold: 0.6
+    });
+
+    videos.forEach(video => videoObserver.observe(video));
+  </script>
+  <section id="certifications" style="
+    padding: 100px 20px; 
+    background: #f8f9fc; 
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+">
+    <div style="max-width: 1200px; margin: 0 auto;">
+
+      <div style="text-align: center; margin-bottom: 70px;">
+        <span
+          style="font-size: 0.85rem; background: rgba(108, 92, 231, 0.1); color: #6c5ce7; padding: 6px 20px; border-radius: 20px; font-weight: 700; letter-spacing: 1px;">VALIDATION
+          DES ACQUIS</span>
+        <h2 style="font-size: 3rem; font-weight: 900; color: #2d1b4e; margin: 15px 0;">Certifications <span
+            style="color: #6c5ce7;">Obtenues</span></h2>
+        <div style="width: 80px; height: 5px; background: #6c5ce7; border-radius: 10px; margin: 0 auto;"></div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+        <div class="apparition"
+          style="background: white; border-radius: 25px; padding: 30px; border: 1px solid #e1e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; position: relative; overflow: hidden;">
+          <div
+            style="position: absolute; top: -10px; right: -10px; background: #2d1b4e; color: white; padding: 20px 40px; transform: rotate(45deg); font-size: 0.7rem; font-weight: 800;">
+            VALIDÉ</div>
+
+          <img src="anssi-logo.png" alt="ANSSI"
+            style="height: 50px; margin-bottom: 20px; filter: grayscale(100%); transition: 0.3s;"
+            onmouseover="this.style.filter='grayscale(0%)'">
+          <h3 style="color: #2d1b4e; font-size: 1.3rem; margin-bottom: 10px;">SecNumacadémie</h3>
+          <p style="color: #636e72; font-size: 0.85rem; line-height: 1.6; margin-bottom: 25px;">Formation à la
+            cybersécurité : panorama de la SSI, sécurité de l'authentification et du poste de travail.</p>
+
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #eee; padding-top: 20px;">
+            <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">Délivré par : ANSSI</span>
+            <a href="certif-anssi.pdf" target="_blank"
+              style="text-decoration: none; background: #6c5ce7; color: white; padding: 8px 18px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);">Voir
+              le diplôme</a>
+          </div>
+        </div>
+
+        <div class="apparition"
+          style="background: white; border-radius: 25px; padding: 30px; border: 1px solid #e1e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 15px; right: 20px;">
+            <img src="pix-logo.png" alt="Pix" style="height: 30px;">
+          </div>
+
+          <h3 style="color: #2d1b4e; font-size: 1.3rem; margin-bottom: 10px; margin-top: 20px;">Certification PIX</h3>
+          <p style="color: #636e72; font-size: 0.85rem; line-height: 1.6; margin-bottom: 25px;">Évaluation des
+            compétences
+            numériques (Développement, Données, Communication et Sécurité).</p>
+
+          <div style="background: #f8f9fc; border-radius: 15px; padding: 15px; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; margin-bottom: 5px;">
+              <span style="font-weight: 700; color: #6c5ce7;">Score obtenu</span>
+              <span style="font-weight: 700;">580 Pix</span>
+            </div>
+            <div style="width: 100%; height: 6px; background: #eee; border-radius: 10px;">
+              <div style="width: 80%; height: 100%; background: #6c5ce7; border-radius: 10px;"></div>
+            </div>
+          </div>
+
+          <div style="text-align: center;">
+            <a href="https://pix.fr" target="_blank"
+              style="text-decoration: none; color: #6c5ce7; font-size: 0.85rem; font-weight: 700; border-bottom: 2px solid #6c5ce7;">Accéder
+              au profil Pix</a>
+          </div>
+        </div>
+
+        <div class="apparition"
+          style="background: white; border-radius: 25px; padding: 30px; border: 1px solid #e1e8f0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s;">
+          <div
+            style="background: #efeffd; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+            <span style="font-size: 1.5rem;">🎓</span>
+          </div>
+          <h3 style="color: #2d1b4e; font-size: 1.3rem; margin-bottom: 10px;">Apprenez à coder avec JavaScript</h3>
+          <p style="color: #636e72; font-size: 0.85rem; line-height: 1.6; margin-bottom: 25px;">Maîtrise des bases du
+            langage JS, manipulation du DOM et événements utilisateurs.</p>
+
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #eee; padding-top: 20px;">
+            <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 600;">OpenClassrooms</span>
+            <a href="certif-js.pdf" target="_blank"
+              style="text-decoration: none; color: #6c5ce7; font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; gap: 5px;">
+              Certificat <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer
+    style="background: #1a1a2e; padding: 60px 20px; color: white; text-align: center; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 style="font-size: 1.8rem; margin-bottom: 15px;">Rania <span style="color: #a29bfe;">Madmar</span></h2>
+
+
+      <p style="font-size: 0.75rem; color: #636e72;">&copy; 2026- Portfolio BTS SIO. /p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

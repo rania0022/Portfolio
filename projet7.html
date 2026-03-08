@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Stage FRANAFRIX - Rania Madmar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            /* Violet identique aux autres fiches */
+            --primary-light: #a29bfe;
+            --dark: #1a1a2e;
+            --glass: rgba(255, 255, 255, 0.85);
+            --bg: #f0f2f8;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f2f8 0%, #e0e7ff 100%);
+            color: #2d3436;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        /* NAVIGATION */
+        .nav-header {
+            padding: 30px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .btn-retour {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            background: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.1);
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-retour:hover {
+            transform: translateX(-5px);
+            background: var(--primary);
+            color: white;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto 80px;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 60px;
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-project {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .badge-stage {
+            display: inline-block;
+            background: #2ecc71;
+            /* Vert pour différencier le stage */
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            color: var(--dark);
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .periode {
+            display: inline-block;
+            background: rgba(108, 92, 231, 0.1);
+            color: var(--primary);
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .image-principale {
+            width: 100%;
+            border-radius: 25px;
+            margin-bottom: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--dark);
+            font-size: 1.6rem;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2::before {
+            content: "";
+            width: 35px;
+            height: 5px;
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* TECH CARDS */
+        .grid-tech {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .tech-card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            transition: 0.3s;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-light);
+            box-shadow: 0 10px 20px rgba(108, 92, 231, 0.1);
+        }
+
+        .tech-card img {
+            height: 40px;
+            margin-bottom: 12px;
+            object-fit: contain;
+        }
+
+        .tech-card span {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        /* LISTS */
+        .custom-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .custom-list li {
+            padding-left: 35px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .custom-list li i {
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: var(--primary);
+        }
+
+        /* BILAN BOX */
+        .bilan-box {
+            background: var(--dark);
+            color: white;
+            padding: 40px;
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+
+        .bilan-box h3 {
+            color: var(--primary-light);
+            margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-header">
+        <a href="index.html#projets" class="btn-retour">
+            <i class="fas fa-arrow-left"></i> Retour au Portfolio
+        </a>
+    </div>
+
+    <div class="container">
+        <header class="header-project">
+            <div class="badge-stage"><i class="fas fa-briefcase"></i> Stage de Fin d'Année</div>
+            <h1>Site Vitrine FRANAFRIX</h1>
+            <span class="periode">Janvier 2026 — Février 2026</span>
+            <p style="color: #636e72; font-weight: 500;">Déploiement IT & Logistique Internationale</p>
+        </header>
+
+        <img src="franafrix.jpg" alt="Projet Franafrix" class="image-principale">
+
+        <h2><i class="fas fa-search"></i> Analyse du Projet</h2>
+        <p>FRANAFRIX est une entreprise spécialisée dans l'intégration de solutions <strong>ServiceNow</strong> et
+            l'exportation IT. Ma mission a été de concevoir l'intégralité de leur identité numérique, en transformant
+            une maquette graphique en un site web professionnel, performant et <strong>Responsive Design</strong>.</p>
+
+        <h2><i class="fas fa-tasks"></i> Réalisations Techniques</h2>
+        <ul class="custom-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Développement sur mesure :</strong> Structure HTML5/CSS3
+                propre sans CMS pour un chargement ultra-rapide.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Intégration API :</strong> Mise en place d'un formulaire de
+                contact dynamique via <strong>EmailJS</strong>.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Responsive Design :</strong> Adaptation complète sur mobiles
+                et tablettes via Media Queries.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Optimisation SEO :</strong> Configuration des balises Meta
+                et indexation Google pour la visibilité internationale.</li>
+        </ul>
+
+        <h2><i class="fas fa-laptop-code"></i> Technologies & Outils</h2>
+        <div class="grid-tech">
+            <div class="tech-card">
+                <img src="html.png" alt="HTML">
+                <span>HTML5 / CSS3</span>
+            </div>
+            <div class="tech-card">
+                <img src="javascript.png" alt="JS">
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-card">
+                <img src="emailjs.png" alt="EmailJS">
+                <span>EmailJS API</span>
+            </div>
+            <div class="tech-card">
+                <img src="visualstudiocode.png" alt="VS Code">
+                <span>VS Code</span>
+            </div>
+        </div>
+
+        <h2><i class="fas fa-info-circle"></i> Pages Développées</h2>
+        <ul class="custom-list">
+            <li><i class="fas fa-code"></i> <strong>Expertise ServiceNow :</strong> Présentation des modules ITSM/ITOM
+                et méthodologie de déploiement.</li>
+            <li><i class="fas fa-ship"></i> <strong>Export & Logistique :</strong> Gestion des pôles Industrie, Médical
+                et BTP à l'international.</li>
+            <li><i class="fas fa-newspaper"></i> <strong>Blog :</strong> Espace de veille technologique sur la
+                transformation digitale.</li>
+            <li><i class="fas fa-question-circle"></i> <strong>FAQ & Support :</strong> Aide aux clients sur les délais
+                et procédures d'export.</li>
+        </ul>
+
+        <div class="bilan-box">
+            <h3><i class="fas fa-award"></i> Bilan et Compétences</h3>
+            <ul class="custom-list">
+                <li><i class="fas fa-star" style="color: var(--primary-light);"></i> Autonomie complète sur le cycle de
+                    vie d'un projet web professionnel.</li>
+                <li><i class="fas fa-star" style="color: var(--primary-light);"></i> Maîtrise de l'intégration de
+                    services tiers (EmailJS).</li>
+                <li><i class="fas fa-star" style="color: var(--primary-light);"></i> Expérience concrète du déploiement
+                    en production (Hébergement & DNS).</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

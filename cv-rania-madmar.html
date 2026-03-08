@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Rania Madmar - BTS SIO SLAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --dark: #1a1a2e;
+            --light-violet: #a29bfe;
+            --bg-gray: #f4f7f6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-gray);
+            margin: 0;
+            padding: 30px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-card {
+            width: 950px;
+            background: white;
+            display: flex;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        /* --- COLONNE GAUCHE --- */
+        .sidebar {
+            width: 38%;
+            background: var(--dark);
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .profile-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-title h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: white;
+            font-weight: 700;
+        }
+
+        .profile-title p {
+            color: var(--light-violet);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .side-section {
+            margin-bottom: 35px;
+        }
+
+        .side-section h3 {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            color: var(--light-violet);
+        }
+
+        .contact-item {
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .skill-group {
+            margin-bottom: 15px;
+        }
+
+        .skill-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+            color: #ddd;
+        }
+
+        .skill-bar {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .skill-progress {
+            position: absolute;
+            height: 100%;
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* --- COLONNE DROITE --- */
+        .main {
+            width: 62%;
+            padding: 40px 50px;
+        }
+
+        .about-box {
+            background: linear-gradient(to right, #ffffff, #fcfaff);
+            border-left: 5px solid var(--primary);
+            border-radius: 0 15px 15px 0;
+            padding: 25px;
+            position: relative;
+            box-shadow: 5px 5px 15px rgba(108, 92, 231, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .main-section h2 {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin: 30px 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 2px solid #eee;
+            position: relative;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .date-badge {
+            font-size: 0.75rem;
+            background: var(--primary);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: var(--dark);
+            margin: 8px 0 2px;
+        }
+
+        .company {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .desc {
+            font-size: 0.85rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .tag {
+            background: #eee;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 5px 5px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-card">
+        <aside class="sidebar">
+            <div class="profile-title">
+                <h1>Rania Madmar</h1>
+                <p>Étudiante BTS SIO SLAM</p>
+            </div>
+
+            <div class="side-section">
+                <h3>Coordonnées</h3>
+                <div class="contact-item">raniamadmar01@gmail.com</div>
+                <div class="contact-item">Évry-Courcouronnes (91)</div>
+                <div class="contact-item">19 ans</div>
+            </div>
+
+            <div class="side-section">
+                <h3>Compétences Tech</h3>
+                <div class="skill-group">
+                    <span class="skill-label">Web (HTML, CSS, JS, PHP)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Java & Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Bases de données (SQL)</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <span class="skill-label">Modélisation UML/Merise</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-section">
+                <h3>Langues</h3>
+                <div class="contact-item">Français : Natif</div>
+                <div class="contact-item">Anglais : Technique</div>
+            </div>
+
+            <div class="side-section">
+                <h3>Centres d'intérêt</h3>
+                <div class="interest-tags">
+                    <span class="tag" style="background: rgba(255,255,255,0.1); color: white;">Lecture</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.1); color: white;">Sport</span>
+                    <span class="tag" style="background: rgba(255,255,255,0.1); color: white;">Voyage</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="side-section" style="margin-bottom: 10px;">
+                <h3 style="
+                display: flex; 
+                align-items: center; 
+                gap: 12px; 
+                color: var(--dark); 
+                border-bottom: 2px solid var(--primary); 
+                padding-bottom: 10px; 
+                text-transform: uppercase; 
+                font-size: 0.95rem; 
+                letter-spacing: 1.5px;
+                margin-bottom: 5px;
+            ">
+                    <span
+                        style="background: var(--primary); color: white; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 0.6rem;">👤</span>
+                    À Propos de moi
+                </h3>
+                </br>
+
+                <div class="about-content" style="padding: 5px 5px;">
+                    <p style="margin: 0; font-size: 0.85rem; color: #000000; line-height: 1.6; font-weight: 400;">
+                        Actuellement en deuxième année de BTS SIO option SLAM au Lycée Parc des Loges, je me forme au
+                        développement
+                        d’applications, à la modélisation et à la cybersécurité.
+                    </p>
+
+                    <p style="margin-top: 8px; font-size: 0.85rem; color: #000000; line-height: 1.6; font-weight: 400;">
+                        Sérieuse, curieuse et organisée, j’aime transformer des besoins complexes en solutions
+                        informatiques
+                        concrètes. Mon parcours en SIG m'apporte une vision transverse alliant gestion et technique.
+                    </p>
+                </div>
+            </div>
+            <div class="main-section">
+                <h2>📁 Expériences Professionnelles</h2>
+
+                <div class="experience-item">
+                    <span class="date-badge">Janv - Fév 2026</span>
+                    <div class="job-title">Stagiaire Expertise IT & Web</div>
+                    <span class="company">Franafrix – Expertise IT</span>
+                    <p class="desc">Audit de visibilité numérique et refonte d'écosystème web. Travail sur l'image de
+                        marque et l'acquisition client.</p>
+                </div>
+
+                <div class="experience-item">
+                    <span class="date-badge">Mai - Juin 2025</span>
+                    <div class="job-title">Développeuse Web Stagiaire</div>
+                    <span class="company">Entreprise de Beauté</span>
+                    <p class="desc">Réalisation d'un site vitrine et dynamique. Utilisation de PHP, MySQL, WAMP
+                        .</p>
+                </div>
+            </div>
+
+            <div class="main-section">
+                <h2>🎓 Formation</h2>
+
+                <div class="experience-item">
+                    <span class="date-badge">2024 - Présent</span>
+                    <div class="job-title">BTS SIO Option SLAM</div>
+                    <span class="company">Lycée Parc des Loges, Évry</span>
+                    <p class="desc">Développement d'applications, Programmation Orientée Objet (Java), gestion de bases
+                        de données et cybersécurité.</p>
+                </div>
+
+                <div class="experience-item">
+                    <span class="date-badge">2022 - 2024</span>
+                    <div class="job-title">Baccalauréat STMG - Spécialité SIG</div>
+                    <span class="company">Lycée Parc des Loges, Évry</span>
+                    <p class="desc">Bases en gestion, économie et analyse des systèmes d'information. Mention obtenue.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
